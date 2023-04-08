@@ -1,3 +1,3 @@
 # przygarnij-mnie
-Search for animals from your local shelter
+Search for animals at local shelter
 [The site](https://przygarnij-mnie.herokuapp.com/)
