@@ -1,6 +1,7 @@
+import { useSelector } from "react-redux";
 import Pet from "./Pet";
-
-const Results = ({ pets }) => {
+const Results = () => {
+  const pets = useSelector((state) => state.search.pets);
   return (
     <div className="search">
       {!pets.length ? (
@@ -22,5 +23,4 @@ const Results = ({ pets }) => {
     </div>
   );
 };
-
 export default Results;

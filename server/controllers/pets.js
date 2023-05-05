@@ -12,26 +12,29 @@ module.exports = {
           const koteks = await Kotek.find({
             name: { $regex: name, $options: "i" },
             registration_date: { $gte: date },
-          });
+          }).sort({ registration_date: 1 });
 
           const pieseks = await Piesek.find({
             name: { $regex: name, $options: "i" },
             registration_date: { $gte: date },
-          });
+          }).sort({ registration_date: 1 });
 
           pets = koteks.concat(pieseks);
+          pets.sort((a, b) =>
+            a.registration_date.localeCompare(b.registration_date)
+          );
         } else if (animal === "kot") {
           pets = await Kotek.find({
             species: animal,
             name: { $regex: name, $options: "i" },
             registration_date: { $gte: date },
-          });
+          }).sort({ registration_date: 1 });
         } else if (animal === "pies") {
           pets = await Piesek.find({
             species: animal,
             name: { $regex: name, $options: "i" },
             registration_date: { $gte: date },
-          });
+          }).sort({ registration_date: 1 });
         } else {
           return res.status(400).json({ message: "Nieprawidłowy gatunek" });
         }
