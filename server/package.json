@@ -9,7 +9,7 @@
     "dev": "nodemon server.js"
   },
   "author": "Adrian S",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cloudinary": "^1.35.0",
     "dotenv": "^16.0.3",
