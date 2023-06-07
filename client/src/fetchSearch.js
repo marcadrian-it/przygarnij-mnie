@@ -1,6 +1,7 @@
 async function fetchSearch({ animal, name, registration_date }) {
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
   const res = await fetch(
-    `https://przygarnij-mnie.herokuapp.com/pets?animal=${animal}&name=${name}&date=${registration_date}`
+    `${API_BASE_URL}/pets?animal=${animal}&name=${name}&date=${registration_date}`
   );
 
   if (!res.ok)

@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders correctly with no pets 1`] = `
+<DocumentFragment>
+  <div
+    class="search"
+  >
+    <h1>
+      Nie Znaleziono Wyników
+    </h1>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders correctly with pets 1`] = `
+<DocumentFragment>
+  <div
+    class="search"
+  >
+    <a
+      class="pet"
+      href="/details/undefined"
+    >
+      <div
+        class="image-container"
+      >
+        <img
+          data-testid="thumbnail"
+          src="../public/none.png"
+        />
+      </div>
+      <div
+        class="info"
+      >
+        <h1 />
+        <h2>
+          undefined — undefined
+        </h2>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;
