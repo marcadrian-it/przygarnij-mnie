@@ -20,7 +20,6 @@ To visit the website, click on the logo.
 - The code can be rewritten in TypeScript
 - The UI can be polished using Tailwind
 - Since the KTOZ website has been updated, new species can be added
-- If the app is updated, tests should be added
 
 # Lessons learned
 
@@ -47,6 +46,10 @@ During the development of this project, I had the opportunity to learn and work 
 - React
 - Redux Toolkit
 - Vite
+
+## Tests
+- Vitest
+- Happy-dom
 
 ## CDN
 
