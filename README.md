@@ -57,5 +57,5 @@ During the development of this project, I had the opportunity to learn and work 
 - Cloudinary
 
 ## Preview
+![Preview](https://raw.githubusercontent.com/marcadrian-it/przygarnij-mnie/main/client/public/przygarnij-mnie.jpg)
 
--
